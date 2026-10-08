@@ -1,0 +1,39 @@
+{
+  "version": 3,
+  "targets": {},
+  "libraries": {},
+  "projectFileDependencyGroups": {},
+  "packageFolders": {
+    "C:\\Users\\kilad\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "restore": {
+      "projectUniqueName": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Infrastructure\\RestaurantBooking.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Infrastructure\\RestaurantBooking.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\kilad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\kilad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to read project information for 'RestaurantBooking.Infrastructure': Invalid framework identifier ''."
+    }
+  ]
+}

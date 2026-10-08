@@ -1,0 +1,26 @@
+@page
+@model CreateModel
+@{ ViewData["Title"] = "Book a Table"; }
+<div class="row justify-content-center"><div class="col-md-5">
+<h2>Book a Table</h2>
+<p class="text-muted">Reservation duration: 2 hours.</p>
+<form method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Input.TableId" class="form-label"></label>
+        <select asp-for="Input.TableId" asp-items="Model.Tables" class="form-select"></select>
+        <span asp-validation-for="Input.TableId" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Input.StartLocal" class="form-label"></label>
+        <input asp-for="Input.StartLocal" class="form-control" />
+        <span asp-validation-for="Input.StartLocal" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Input.GuestCount" class="form-label"></label>
+        <input asp-for="Input.GuestCount" type="number" min="1" class="form-control" />
+        <span asp-validation-for="Input.GuestCount" class="text-danger"></span>
+    </div>
+    <button class="btn btn-primary">Book</button>
+</form>
+</div></div>

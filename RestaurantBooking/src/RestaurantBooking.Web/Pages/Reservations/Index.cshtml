@@ -1,0 +1,39 @@
+@page
+@model IndexModel
+@inject RestaurantBooking.Application.Abstractions.IRestaurantClock Clock
+@{ ViewData["Title"] = "My Reservations"; }
+<h2>My Reservations</h2>
+@if (Model.Message is not null) { <div class="alert alert-success">@Model.Message</div> }
+@if (Model.Error is not null) { <div class="alert alert-danger">@Model.Error</div> }
+
+@if (Model.Items.Count == 0)
+{
+    <p>You have no reservations yet. <a asp-page="Create">Book a table</a>.</p>
+}
+else
+{
+    <table class="table align-middle">
+        <thead><tr><th>Time</th><th>Table</th><th>Guests</th><th>Status</th><th></th></tr></thead>
+        <tbody>
+        @foreach (var r in Model.Items)
+        {
+            var local = Clock.ToLocal(r.StartTime);
+            var canCancel = r.Status == RestaurantBooking.Domain.Entities.ReservationStatus.Confirmed && r.StartTime > Clock.UtcNow;
+            <tr>
+                <td>@local.ToString("yyyy-MM-dd HH:mm")</td>
+                <td>№@r.Table.Number</td>
+                <td>@r.GuestCount</td>
+                <td>@(r.Status == RestaurantBooking.Domain.Entities.ReservationStatus.Confirmed ? "Confirmed" : "Canceled")</td>
+                <td>
+                    @if (canCancel)
+                    {
+                        <form method="post" asp-page-handler="Cancel" asp-route-id="@r.Id">
+                            <button class="btn btn-sm btn-outline-danger">გაუქმება</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}

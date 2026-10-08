@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!--
+      თუ .NET 10 SDK არ გაქვს (dotnet --version):
+      TargetFramework -> net8.0, MsVersion -> 8.0.*, JwtLibVersion -> 7.1.2
+    -->
+    <MsVersion>10.0.*</MsVersion>
+    <JwtLibVersion>8.*</JwtLibVersion>
+  </PropertyGroup>
+</Project>

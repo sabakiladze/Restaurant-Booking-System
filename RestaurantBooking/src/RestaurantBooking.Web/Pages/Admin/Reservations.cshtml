@@ -1,0 +1,27 @@
+@page
+@model ReservationsModel
+@inject RestaurantBooking.Application.Abstractions.IRestaurantClock Clock
+@{ ViewData["Title"] = "All Reservations"; }
+<h2>Upcoming Reservations</h2>
+@if (Model.Message is not null) { <div class="alert alert-success">@Model.Message</div> }
+@if (Model.Error is not null) { <div class="alert alert-danger">@Model.Error</div> }
+<table class="table align-middle">
+    <thead><tr><th>Time</th><th>Table</th><th>Guest</th><th>Email</th><th>Seats</th><th></th></tr></thead>
+    <tbody>
+    @foreach (var r in Model.Items)
+    {
+        <tr>
+            <td>@Clock.ToLocal(r.StartTime).ToString("yyyy-MM-dd HH:mm")</td>
+            <td>№@r.Table.Number</td>
+            <td>@r.User.FullName</td>
+            <td>@r.User.Email</td>
+            <td>@r.GuestCount</td>
+            <td>
+                <form method="post" asp-page-handler="Cancel" asp-route-id="@r.Id">
+                    <button class="btn btn-sm btn-outline-danger">Cancel</button>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

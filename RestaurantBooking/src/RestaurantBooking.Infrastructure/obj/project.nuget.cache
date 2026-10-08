@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "l5K0aHPS9Tc=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Infrastructure\\RestaurantBooking.Infrastructure.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to read project information for 'RestaurantBooking.Infrastructure': Invalid framework identifier ''.",
+      "projectPath": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Infrastructure\\RestaurantBooking.Infrastructure.csproj",
+      "filePath": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Infrastructure\\RestaurantBooking.Infrastructure.csproj",
+      "targetGraphs": []
+    }
+  ]
+}

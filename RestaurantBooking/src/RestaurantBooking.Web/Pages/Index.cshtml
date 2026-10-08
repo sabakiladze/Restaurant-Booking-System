@@ -1,0 +1,15 @@
+@page
+@{ ViewData["Title"] = "Main"; }
+<div class="p-5 mb-4 bg-light rounded-3">
+    <h1 class="display-6">Book a Table Online</h1>
+    <p class="lead">Choose a table, date, and number of guests. You will receive a confirmation by email.</p>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <a class="btn btn-primary" asp-page="/Reservations/Create">Book a Table</a>
+    }
+    else
+    {
+        <a class="btn btn-primary" asp-page="/Account/Login">Login</a>
+        <a class="btn btn-outline-secondary" asp-page="/Account/Register">Register</a>
+    }
+</div>

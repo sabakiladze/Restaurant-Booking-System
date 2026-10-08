@@ -1,0 +1,30 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Domain\\RestaurantBooking.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Domain\\RestaurantBooking.Domain.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Domain\\RestaurantBooking.Domain.csproj",
+        "projectPath": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Domain\\RestaurantBooking.Domain.csproj",
+        "packagesPath": "C:\\Users\\kilad\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kilad\\Desktop\\RestaurantBooking\\RestaurantBooking\\src\\RestaurantBooking.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kilad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        }
+      }
+    }
+  }
+}

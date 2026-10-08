@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\RestaurantBooking.Application\RestaurantBooking.Application.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- IOptions, IConfiguration, PasswordHasher<T> მოდის shared framework-იდან -->
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="$(MsVersion)" />
+    <PackageReference Include="MailKit" Version="4.*" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="$(JwtLibVersion)" />
+  </ItemGroup>
+</Project>
