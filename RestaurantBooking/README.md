@@ -11,7 +11,7 @@ Domain  <-  Application  <-  Infrastructure  <-  Web
 ## გაშვება
 
 ```bash
-dotnet --version                 # 10.x. თუ 8/9 — იხილე Directory.Build.props
+dotnet --version                 
 dotnet restore
 dotnet build
 
